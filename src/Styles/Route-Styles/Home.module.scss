@@ -5,12 +5,12 @@
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  height: 100%;
   width: 100%;
 
   .Content_Container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
 
     border: 1px solid white;
 
@@ -36,7 +36,9 @@
       align-items: center;
 
       height: fit-content;
-      width: fit-content;
+      width: 500px;
+
+      margin: auto;
 
       .Header {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -50,7 +52,7 @@
         gap: 10px;
 
         height: 40px;
-        width: 350px;
+        width: 100%;
 
         .User_Icon_Container {
           border: 1px solid white;
