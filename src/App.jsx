@@ -15,13 +15,13 @@ import PostSingle from "./Dynamic-Routes/PostSingle";
 // Dynamic Routes Import End
 
 function App() {
-  const [isAuth, setIsAuth] = useState(false)
+  const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar isAuth={isAuth} setIsAuth={setIsAuth} />
         <Routes>
-          <Route path={"/"} element={<Home />} />
+          <Route path={"/"} element={<Home isAuth={isAuth} />} />
           <Route path={"Login"} element={<Login setIsAuth={setIsAuth} />} />
           <Route path={"CreatePost"} element={<CreatePost isAuth={isAuth} />} />
           <Route path={"*"} element={<Error />} />

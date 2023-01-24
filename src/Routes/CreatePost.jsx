@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { TabTitle } from "../Utilities/TabTitle";
 import { useNavigate } from "react-router-dom";
 import Styles from "../Styles/Route-Styles/CreatePost.module.scss";
 
@@ -6,6 +7,8 @@ import { addDoc, collection } from "firebase/firestore";
 import { auth, db } from "../Firebase";
 
 const CreatePost = ({isAuth}) => {
+  TabTitle("Tiny Post | Create Post")
+
   const [title, setTitle] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
