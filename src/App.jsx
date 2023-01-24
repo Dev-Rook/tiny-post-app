@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path={"Login"} element={<Login setIsAuth={setIsAuth} />} />
-          <Route path={"CreatePost"} element={<CreatePost />} />
+          <Route path={"CreatePost"} element={<CreatePost isAuth={isAuth} />} />
           <Route path={"*"} element={<Error />} />
 
           {/* Dynamic Routes */}

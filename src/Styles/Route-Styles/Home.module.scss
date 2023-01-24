@@ -1,0 +1,106 @@
+.Page {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+
+  .Content_Container {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid white;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    gap: 20px;
+
+    height: 100%;
+    width: fit-content;
+
+    margin-top: 100px;
+
+    .Post_Card {
+      display: flex;
+      flex-direction: column;
+
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color: rgb(15, 38, 61);
+
+      justify-content: center;
+      align-items: center;
+
+      height: fit-content;
+      width: fit-content;
+
+      .Header {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        display: flex;
+
+        justify-content: flex-start;
+        align-items: center;
+
+        padding: 5px;
+        gap: 10px;
+
+        height: 40px;
+        width: 350px;
+
+        .User_Icon_Container {
+          border: 1px solid white;
+          border-radius: 50%;
+
+          height: 30px;
+          width: 30px;
+        }
+
+        .Text {
+          margin: auto;
+          margin-left: 0px;
+        }
+      }
+
+      .Image_Container {
+        display: flex;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        justify-content: center;
+        align-items: center;
+
+        height: 200px;
+        width: 100%;
+
+        .Image {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .Info_Section {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        padding: 5px;
+
+        height: fit-content;
+        width: 100%;
+
+        .Text {
+          margin: auto;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

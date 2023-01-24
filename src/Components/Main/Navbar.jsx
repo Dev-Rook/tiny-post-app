@@ -61,17 +61,24 @@ const Navbar = ({ isAuth, setIsAuth }) => {
           <Link to={"/"} onClick={scrollUp} className={Styles.Navlink}>
             Home
           </Link>
-          <Link to={"CreatePost"} onClick={scrollUp} className={Styles.Navlink}>
-            Create Post
-          </Link>
           {!isAuth ? (
             <Link to={"Login"} onClick={scrollUp} className={Styles.Navlink}>
               Login
             </Link>
           ) : (
-            <button className={Styles.Logout_Button} onClick={signUserOut}>
-              Logout
-            </button>
+            <>
+              <Link
+                to={"CreatePost"}
+                onClick={scrollUp}
+                className={Styles.Navlink}
+              >
+                Create Post
+              </Link>
+              
+              <button className={Styles.Logout_Button} onClick={signUserOut}>
+                Logout
+              </button>
+            </>
           )}
         </div>
       </div>
