@@ -1,0 +1,23 @@
+.Page {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+
+  .Content_Container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+
+    height: fit-content;
+    width: fit-content;
+  }
+}
