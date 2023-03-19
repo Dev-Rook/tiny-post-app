@@ -134,22 +134,6 @@ const Navbar = ({ isAuth, setIsAuth }) => {
             </ListGroup.Item>
           </Link>
         </ListGroup>
-
-        {/* <div className={Styles.Contact_Information_Box}>
-          <div className={Styles.Contact_item}>
-            <p className={Styles.Title}>School</p>
-            <p className={Styles.Text}>221 B Baker Street</p>
-          </div>
-          <div className={Styles.Contact_item}>
-            <p className={Styles.Title}>Contact</p>
-            <p className={Styles.Text}>1 876 192 1680</p>
-            <p className={Styles.Text}>hhs@gmail.com</p>
-          </div>
-          <div className={Styles.Contact_item}>
-            <p className={Styles.Title}>Social Media</p>
-            <p className={Styles.Text}>221 B Baker Street</p>
-          </div>
-        </div> */}
       </div>
       {/* Mobile Menu End */}
     </nav>
